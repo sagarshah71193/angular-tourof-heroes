@@ -1,0 +1,8 @@
+Go over this project in this order:
+
+(1) index.html
+(2) style.css
+(3) app.component
+(4) hero.ts
+(5) mock-heroes.ts
+(6) heroes.component
