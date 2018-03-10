@@ -7,6 +7,8 @@ import { NgModule } from '@angular/core';
  */
 import {FormsModule} from '@angular/forms';
 
+import {HeroService} from './hero.service';
+
 
 import { AppComponent } from './app.component';
 /**
@@ -14,19 +16,23 @@ import { AppComponent } from './app.component';
  * if you add a compont manually, you have to add that component here manually as well
  */
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     /**Notice HeroesComponent is here as well */
-    HeroesComponent
+    HeroesComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    HeroService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
